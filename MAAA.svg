@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 273">
+  <title>MAAA</title>
+  <defs>
+    <filter id="glow-aaa" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#FFA828" flood-opacity="0.85"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="14" flood-color="#FF8800" flood-opacity="0.45"/>
+    </filter>
+    <pattern id="hatch-gold" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#E8DAC8" stroke-width="2.2" stroke-opacity="0.55"/>
+    </pattern>
+    <pattern id="hatch-amber" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#FFE898" stroke-width="2.2" stroke-opacity="0.45"/>
+    </pattern>
+    <linearGradient id="white-warm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#F8F1E8"/>
+      <stop offset="100%" stop-color="#ECE0D0"/>
+    </linearGradient>
+    <linearGradient id="amber-grad" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFE658"/>
+      <stop offset="50%" stop-color="#FFB424"/>
+      <stop offset="100%" stop-color="#F28808"/>
+    </linearGradient>
+    <clipPath id="clip-a-main">
+      <path d="M150 33 L339 33 L313 181 L269 181 L275 148 L142 148 L125 240 L82 240 L109 88 L152 88 L148 109 L282 109 L288 71 L113 71 Z"/>
+    </clipPath>
+    <clipPath id="clip-a-bars">
+      <path d="M163 88 L196 88 L193 104 L160 104 Z M205 88 L238 88 L235 104 L202 104 Z M151 159 L184 159 L168 240 L135 240 Z M194 159 L227 159 L211 240 L178 240 Z M348 33 L382 33 L355 181 L322 181 Z M391 33 L425 33 L398 181 L365 181 Z"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#glow-aaa)">
+    <!-- Golden-Orange Duplicate Bars & Inner Accents -->
+    <g clip-path="url(#clip-a-bars)">
+      <rect x="130" y="30" width="300" height="215" fill="url(#amber-grad)"/>
+      <polygon points="163,88 196,88 175,104" fill="#FFF078" opacity="0.65"/>
+      <polygon points="205,88 238,88 218,104" fill="#FFF078" opacity="0.65"/>
+      <polygon points="151,159 184,159 160,205" fill="#FFD448" opacity="0.6"/>
+      <polygon points="184,159 168,240 135,240 160,205" fill="#E88208" opacity="0.65"/>
+      <polygon points="194,159 227,159 203,205" fill="#FFD448" opacity="0.6"/>
+      <polygon points="227,159 211,240 178,240 203,205" fill="#E88208" opacity="0.65"/>
+      <polygon points="348,33 382,33 360,110 335,95" fill="#FFE866" opacity="0.65"/>
+      <polygon points="335,95 360,110 355,181 322,181" fill="#E67E05" opacity="0.65"/>
+      <polygon points="391,33 425,33 403,110 378,95" fill="#FFE866" opacity="0.65"/>
+      <polygon points="378,95 403,110 398,181 365,181" fill="#E67E05" opacity="0.65"/>
+      <rect x="130" y="30" width="300" height="215" fill="url(#hatch-amber)"/>
+    </g>
+    <path d="M163 88 L196 88 L193 104 L160 104 Z M205 88 L238 88 L235 104 L202 104 Z M151 159 L184 159 L168 240 L135 240 Z M194 159 L227 159 L211 240 L178 240 Z M348 33 L382 33 L355 181 L322 181 Z M391 33 L425 33 L398 181 L365 181 Z" fill="none" stroke="#FFF2A8" stroke-width="2.5" stroke-linejoin="miter"/>
+
+    <!-- Main White Stylized 'A' -->
+    <g clip-path="url(#clip-a-main)">
+      <rect x="75" y="30" width="270" height="215" fill="url(#white-warm)"/>
+      <polygon points="150,33 255,33 215,71 113,71" fill="#FFFFFF" opacity="0.9"/>
+      <polygon points="255,33 339,33 288,71 215,71" fill="#EAE0D2" opacity="0.8"/>
+      <polygon points="288,71 339,33 326,109 282,109" fill="#F8F4EE" opacity="0.85"/>
+      <polygon points="109,88 152,88 140,148 98,148" fill="#E8DDD0" opacity="0.8"/>
+      <polygon points="148,109 230,109 205,148 142,148" fill="#FFFFFF" opacity="0.9"/>
+      <polygon points="230,109 326,109 318,148 205,148" fill="#E6DACB" opacity="0.75"/>
+      <polygon points="98,148 142,148 125,240 82,240" fill="#F6F1EA" opacity="0.85"/>
+      <polygon points="275,148 318,148 313,181 269,181" fill="#DED0C0" opacity="0.8"/>
+      <rect x="75" y="30" width="270" height="215" fill="url(#hatch-gold)"/>
+    </g>
+    <path d="M150 33 L339 33 L313 181 L269 181 L275 148 L142 148 L125 240 L82 240 L109 88 L152 88 L148 109 L282 109 L288 71 L113 71 Z" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="miter"/>
+  </g>
+</svg>

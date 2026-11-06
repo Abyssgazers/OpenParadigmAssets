@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 273">
+  <title>MAPLUS</title>
+  <defs>
+    <filter id="glow-ap" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#FFB440" flood-opacity="0.75"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="13" flood-color="#FF9010" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="hatch-gold" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#E5D8C6" stroke-width="2.2" stroke-opacity="0.55"/>
+    </pattern>
+    <linearGradient id="white-warm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#F8F1E8"/>
+      <stop offset="100%" stop-color="#ECE0D0"/>
+    </linearGradient>
+    <clipPath id="clip-ma">
+      <path d="M190 33 L379 33 L353 181 L309 181 L315 148 L182 148 L165 240 L122 240 L149 88 L192 88 L188 109 L322 109 L328 71 L153 71 Z"/>
+    </clipPath>
+    <clipPath id="clip-plus-gold">
+      <path d="M366 140 H405 V170 H436 V210 H405 V240 H366 V210 H335 V170 H366 Z"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#glow-ap)">
+    <g clip-path="url(#clip-ma)">
+      <rect x="115" y="30" width="270" height="215" fill="url(#white-warm)"/>
+      <polygon points="190,33 295,33 255,71 153,71" fill="#FFFFFF" opacity="0.9"/>
+      <polygon points="295,33 379,33 328,71 255,71" fill="#EAE0D2" opacity="0.8"/>
+      <polygon points="328,71 379,33 366,109 322,109" fill="#F8F4EE" opacity="0.85"/>
+      <polygon points="149,88 192,88 180,148 138,148" fill="#E8DDD0" opacity="0.8"/>
+      <polygon points="188,109 270,109 245,148 182,148" fill="#FFFFFF" opacity="0.9"/>
+      <polygon points="270,109 366,109 358,148 245,148" fill="#E6DACB" opacity="0.75"/>
+      <polygon points="138,148 182,148 165,240 122,240" fill="#F6F1EA" opacity="0.85"/>
+      <polygon points="315,148 358,148 353,181 309,181" fill="#DED0C0" opacity="0.8"/>
+      <rect x="115" y="30" width="270" height="215" fill="url(#hatch-gold)"/>
+    </g>
+    <path d="M190 33 L379 33 L353 181 L309 181 L315 148 L182 148 L165 240 L122 240 L149 88 L192 88 L188 109 L322 109 L328 71 L153 71 Z" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="miter"/>
+
+    <!-- Bottom-Right White/Gold Plus Sign -->
+    <g clip-path="url(#clip-plus-gold)">
+      <path d="M366 140 H405 V170 H436 V210 H405 V240 H366 V210 H335 V170 H366 Z" fill="url(#white-warm)"/>
+      <polygon points="366,140 405,140 385,190 335,170" fill="#FFFFFF" opacity="0.9"/>
+      <polygon points="405,140 436,170 436,210 385,190" fill="#EFE5D8" opacity="0.8"/>
+      <polygon points="385,190 436,210 405,240 366,240" fill="#E5D8C8" opacity="0.8"/>
+      <rect x="330" y="135" width="110" height="110" fill="url(#hatch-gold)"/>
+    </g>
+    <path d="M366 140 H405 V170 H436 V210 H405 V240 H366 V210 H335 V170 H366 Z" fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+    <path d="M370 144 H401 V174 H432 V206 H401 V236 H370 V206 H339 V174 H370 Z" fill="none" stroke="#FFE699" stroke-width="1.5" opacity="0.85"/>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 217">
+  <title>Clear</title>
+  <defs>
+    <filter id="glow-clear-bg" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#48D8FF" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="shadow-letter" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <clipPath id="clip-clear-bg">
+      <path d="M86 38 L280 38 L257 78 L412 78 L345 194 L151 194 L174 154 L19 154 Z"/>
+    </clipPath>
+    <clipPath id="clip-clear-c">
+      <path d="M179 21 H275 V51 H183 V146 H275 V176 H179 A28 28 0 0 1 151 148 V49 A28 28 0 0 1 179 21 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background Cyan Low-Poly Parallelograms -->
+  <g filter="url(#glow-clear-bg)">
+    <g clip-path="url(#clip-clear-bg)">
+      <rect x="15" y="35" width="400" height="165" fill="#28A8DC"/>
+      <polygon points="86,38 152,38 112,86 52,92" fill="#CEFCFF"/>
+      <polygon points="152,38 228,38 175,88 112,86" fill="#8CE8FA"/>
+      <polygon points="228,38 280,38 257,78 175,88" fill="#54CCF2"/>
+      <polygon points="52,92 112,86 92,132 19,154" fill="#64DAF6"/>
+      <polygon points="112,86 175,88 92,132" fill="#32B2E6"/>
+      <polygon points="19,154 92,132 145,154" fill="#1896D2"/>
+      <polygon points="92,132 175,88 228,136 145,154" fill="#1E9CD6"/>
+      <polygon points="175,88 257,78 292,126 228,136" fill="#38B4E8"/>
+      <polygon points="257,78 342,78 292,126" fill="#58CEF4"/>
+      <polygon points="342,78 412,78 368,134 292,126" fill="#92EEFC"/>
+      <polygon points="292,126 368,134 312,172 228,136" fill="#249AD4"/>
+      <polygon points="368,134 412,78 345,194 312,172" fill="#42BCEB"/>
+      <polygon points="151,194 228,136 268,194" fill="#0E7AB8"/>
+      <polygon points="228,136 312,172 268,194" fill="#188AC6"/>
+      <polygon points="268,194 312,172 345,194" fill="#127EBC"/>
+    </g>
+    <polyline points="19,154 86,38 280,38" fill="none" stroke="#E8FCFF" stroke-width="3.5" stroke-linejoin="miter"/>
+    <polyline points="412,78 345,194 151,194" fill="none" stroke="#58D4FA" stroke-width="3" stroke-linejoin="miter"/>
+  </g>
+
+  <!-- Foreground White Low-Poly 'C' Letter -->
+  <g filter="url(#shadow-letter)">
+    <g clip-path="url(#clip-clear-c)">
+      <rect x="145" y="18" width="135" height="165" fill="#F2F5F8"/>
+      <polygon points="151,21 225,21 183,51 151,68" fill="#FFFFFF"/>
+      <polygon points="225,21 275,21 275,51 183,51" fill="#E4E9EE"/>
+      <polygon points="151,68 183,51 183,128 151,142" fill="#DCE2E8"/>
+      <polygon points="151,142 183,128 232,146 205,176 151,176" fill="#FFFFFF"/>
+      <polygon points="232,146 275,146 275,176 205,176" fill="#E8EDF2"/>
+    </g>
+    <path d="M179 21 H275 V51 H183 V146 H275 V176 H179 A28 28 0 0 1 151 148 V49 A28 28 0 0 1 179 21 Z" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="round"/>
+  </g>
+</svg>

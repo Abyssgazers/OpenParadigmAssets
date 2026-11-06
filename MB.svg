@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 273">
+  <title>MB</title>
+  <defs>
+    <filter id="glow-b" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#D49A58" flood-opacity="0.75"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="13" flood-color="#B87A30" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="hatch-bronze" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#E0D2C2" stroke-width="2.2" stroke-opacity="0.55"/>
+    </pattern>
+    <linearGradient id="white-bronze" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#F5EFE6"/>
+      <stop offset="100%" stop-color="#E6DDD0"/>
+    </linearGradient>
+    <clipPath id="clip-mb">
+      <path d="M190 33 L345 33 L328 120 L356 149 L338 240 L122 240 L149 88 L192 88 L188 109 L288 109 L295 71 L153 71 Z M182 149 L172 202 L305 202 L313 149 Z" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#glow-b)">
+    <g clip-path="url(#clip-mb)">
+      <rect x="115" y="30" width="250" height="215" fill="url(#white-bronze)"/>
+      <polygon points="190,33 275,33 240,71 153,71" fill="#FFFFFF" opacity="0.9"/>
+      <polygon points="275,33 345,33 295,71 240,71" fill="#E6DCD0" opacity="0.8"/>
+      <polygon points="295,71 345,33 328,120 288,109" fill="#F4EFE8" opacity="0.85"/>
+      <polygon points="149,88 192,88 182,149 138,149" fill="#E4DACE" opacity="0.8"/>
+      <polygon points="188,109 288,109 328,120 356,149 182,149" fill="#FFFFFF" opacity="0.88"/>
+      <polygon points="138,149 182,149 172,202 122,240" fill="#F2ECE4" opacity="0.85"/>
+      <polygon points="313,149 356,149 338,240 305,202" fill="#DDD2C4" opacity="0.8"/>
+      <polygon points="172,202 305,202 338,240 122,240" fill="#EAE2D6" opacity="0.85"/>
+      <rect x="115" y="30" width="250" height="215" fill="url(#hatch-bronze)"/>
+    </g>
+    <path d="M190 33 L345 33 L328 120 L356 149 L338 240 L122 240 L149 88 L192 88 L188 109 L288 109 L295 71 L153 71 Z M182 149 L172 202 L305 202 L313 149 Z" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="miter" fill-rule="evenodd"/>
+  </g>
+</svg>

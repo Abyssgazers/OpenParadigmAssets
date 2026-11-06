@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 273">
+  <title>MD</title>
+  <defs>
+    <filter id="glow-d" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#9AA0A6" flood-opacity="0.75"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="13" flood-color="#70767C" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="hatch-silver" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#D8DCDF" stroke-width="2.2" stroke-opacity="0.55"/>
+    </pattern>
+    <linearGradient id="white-silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#F0F2F4"/>
+      <stop offset="100%" stop-color="#DFE3E6"/>
+    </linearGradient>
+    <clipPath id="clip-md">
+      <path d="M190 33 L296 33 L353 90 L329 240 L122 240 L149 88 L192 88 L172 202 L294 202 L310 105 L276 71 L153 71 Z"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#glow-d)">
+    <g clip-path="url(#clip-md)">
+      <rect x="115" y="30" width="245" height="215" fill="url(#white-silver)"/>
+      <polygon points="190,33 296,33 276,71 153,71" fill="#FFFFFF" opacity="0.9"/>
+      <polygon points="296,33 353,90 310,105 276,71" fill="#DFE3E6" opacity="0.8"/>
+      <polygon points="310,105 353,90 342,165 301,160" fill="#F4F6F8" opacity="0.85"/>
+      <polygon points="301,160 342,165 329,240 294,202" fill="#D8DDE0" opacity="0.8"/>
+      <polygon points="149,88 192,88 180,155 136,155" fill="#E0E4E7" opacity="0.8"/>
+      <polygon points="136,155 180,155 172,202 122,240" fill="#F4F6F7" opacity="0.88"/>
+      <polygon points="172,202 294,202 329,240 122,240" fill="#EAECEF" opacity="0.85"/>
+      <rect x="115" y="30" width="245" height="215" fill="url(#hatch-silver)"/>
+    </g>
+    <path d="M190 33 L296 33 L353 90 L329 240 L122 240 L149 88 L192 88 L172 202 L294 202 L310 105 L276 71 L153 71 Z" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="miter"/>
+  </g>
+</svg>

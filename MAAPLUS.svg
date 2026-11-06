@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 273">
+  <title>MAAPLUS</title>
+  <defs>
+    <filter id="glow-aap" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#FFA828" flood-opacity="0.8"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="14" flood-color="#FF8800" flood-opacity="0.4"/>
+    </filter>
+    <pattern id="hatch-gold" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#E8DAC8" stroke-width="2.2" stroke-opacity="0.55"/>
+    </pattern>
+    <pattern id="hatch-amber" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#FFE898" stroke-width="2.2" stroke-opacity="0.45"/>
+    </pattern>
+    <linearGradient id="white-warm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#F8F1E8"/>
+      <stop offset="100%" stop-color="#ECE0D0"/>
+    </linearGradient>
+    <linearGradient id="amber-grad" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFE658"/>
+      <stop offset="50%" stop-color="#FFB424"/>
+      <stop offset="100%" stop-color="#F28808"/>
+    </linearGradient>
+    <clipPath id="clip-aa-main">
+      <path d="M173 33 L362 33 L336 181 L292 181 L298 148 L165 148 L148 240 L105 240 L132 88 L175 88 L171 109 L305 109 L311 71 L136 71 Z"/>
+    </clipPath>
+    <clipPath id="clip-aa-bars">
+      <path d="M186 88 L219 88 L216 104 L183 104 Z M174 159 L207 159 L191 240 L158 240 Z M371 33 L405 33 L378 181 L345 181 Z"/>
+    </clipPath>
+    <clipPath id="clip-plus-gold">
+      <path d="M366 140 H405 V170 H436 V210 H405 V240 H366 V210 H335 V170 H366 Z"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#glow-aap)">
+    <!-- Golden-Orange Duplicate Bar & Inner Accents -->
+    <g clip-path="url(#clip-aa-bars)">
+      <rect x="150" y="30" width="260" height="215" fill="url(#amber-grad)"/>
+      <polygon points="186,88 219,88 198,104" fill="#FFF078" opacity="0.65"/>
+      <polygon points="174,159 207,159 183,205" fill="#FFD448" opacity="0.6"/>
+      <polygon points="207,159 191,240 158,240 183,205" fill="#E88208" opacity="0.65"/>
+      <polygon points="371,33 405,33 383,110 358,95" fill="#FFE866" opacity="0.65"/>
+      <polygon points="358,95 383,110 378,181 345,181" fill="#E67E05" opacity="0.65"/>
+      <rect x="150" y="30" width="260" height="215" fill="url(#hatch-amber)"/>
+    </g>
+    <path d="M186 88 L219 88 L216 104 L183 104 Z M174 159 L207 159 L191 240 L158 240 Z M371 33 L405 33 L378 181 L345 181 Z" fill="none" stroke="#FFF2A8" stroke-width="2.5" stroke-linejoin="miter"/>
+
+    <!-- Main White Stylized 'A' -->
+    <g clip-path="url(#clip-aa-main)">
+      <rect x="100" y="30" width="270" height="215" fill="url(#white-warm)"/>
+      <polygon points="173,33 278,33 238,71 136,71" fill="#FFFFFF" opacity="0.9"/>
+      <polygon points="278,33 362,33 311,71 238,71" fill="#EAE0D2" opacity="0.8"/>
+      <polygon points="311,71 362,33 349,109 305,109" fill="#F8F4EE" opacity="0.85"/>
+      <polygon points="132,88 175,88 163,148 121,148" fill="#E8DDD0" opacity="0.8"/>
+      <polygon points="171,109 253,109 228,148 165,148" fill="#FFFFFF" opacity="0.9"/>
+      <polygon points="253,109 349,109 341,148 228,148" fill="#E6DACB" opacity="0.75"/>
+      <polygon points="121,148 165,148 148,240 105,240" fill="#F6F1EA" opacity="0.85"/>
+      <polygon points="298,148 341,148 336,181 292,181" fill="#DED0C0" opacity="0.8"/>
+      <rect x="100" y="30" width="270" height="215" fill="url(#hatch-gold)"/>
+    </g>
+    <path d="M173 33 L362 33 L336 181 L292 181 L298 148 L165 148 L148 240 L105 240 L132 88 L175 88 L171 109 L305 109 L311 71 L136 71 Z" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="miter"/>
+
+    <!-- Bottom-Right White/Gold Plus Sign -->
+    <g clip-path="url(#clip-plus-gold)">
+      <path d="M366 140 H405 V170 H436 V210 H405 V240 H366 V210 H335 V170 H366 Z" fill="url(#white-warm)"/>
+      <polygon points="366,140 405,140 385,190 335,170" fill="#FFFFFF" opacity="0.9"/>
+      <polygon points="405,140 436,170 436,210 385,190" fill="#EFE5D8" opacity="0.8"/>
+      <polygon points="385,190 436,210 405,240 366,240" fill="#E5D8C8" opacity="0.8"/>
+      <rect x="330" y="135" width="110" height="110" fill="url(#hatch-gold)"/>
+    </g>
+    <path d="M366 140 H405 V170 H436 V210 H405 V240 H366 V210 H335 V170 H366 Z" fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+    <path d="M370 144 H401 V174 H432 V206 H401 V236 H370 V206 H339 V174 H370 Z" fill="none" stroke="#FFE699" stroke-width="1.5" opacity="0.85"/>
+  </g>
+</svg>
